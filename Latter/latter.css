@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    background-color: #c0392b;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.flap {
+    width: 100%;
+    height: 50%;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+
+.letter {
+    width: 90%;
+    height: 100%;
+    max-height: 150px; /* Limit the height to make it scrollable */
+    background-color: white;
+    position: absolute;
+    bottom: -100%;
+    left: 5%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.5s ease;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
